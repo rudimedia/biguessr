@@ -1,0 +1,16 @@
+#!/bin/sh
+# configure (Unix)
+
+# Look for ollama in PATH
+if ! command -v ollama >/dev/null 2>&1; then
+  cat <<EOF
+
+ERROR: This package requires the 'ollama' command‐line tool.
+Please install it from https://ollama.com and ensure
+you can run 'ollama --help' before installing this package.
+
+EOF
+  exit 1
+fi
+
+exit 0
