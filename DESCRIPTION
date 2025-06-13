@@ -2,8 +2,12 @@ Package: biguessr
 Type: Package
 Title: Gender-Coding DACH Given Names
 Version: 0.1.0
-Author: Sam Känner
-Maintainer: Sam Känner s.kaenner@ipw.uni-hannover.de
+Authors@R: 
+  person(
+    given = "Sam", family = "Kaenner",
+    email = "s.kaenner@ipw.uni-hannover.de",
+    role = c("aut", "cre")
+  )
 Description: This function uses a predefined list of given names and genders to infer gender from names. If any given name is not present in the predefined list, the large language model llama3.2 is used to guess the gender. This package is intended for use in the DACH region (Germany, Austria, Switzerland) and is based on historical baby names in those countries.
 Imports:
     dplyr,
@@ -13,6 +17,8 @@ Imports:
     ollamar
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-License: MIT-License
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/rudimedia/biguessr
+BugReports: https://github.com/rudimedia/biguessr/issues
